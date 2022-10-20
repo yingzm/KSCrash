@@ -106,10 +106,8 @@
                 return;
             }
             request.URL = [NSURL URLWithString:signedURL];
-            NSLog(@"signedURL: %@", signedURL);
             [[KSHTTPRequestSender sender] sendRequest:request
                                             onSuccess:^(__unused NSHTTPURLResponse* response1, __unused NSData* data1) {
-                NSLog(@"Upload success");
                 kscrash_callCompletion(onCompletion, reports, YES, nil);
              } onFailure:^(NSHTTPURLResponse* response2, NSData* data2) {
                  NSString* text = [[NSString alloc] initWithData:data2 encoding:NSUTF8StringEncoding];

@@ -320,10 +320,12 @@
 		97BB89CF26337F23008ED481 /* Malloc.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1A1C5AF2B10083A11B /* Malloc.h */; };
 		97BB89D026337F23008ED481 /* Punycode.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1C1C5AF2B10083A11B /* Punycode.h */; };
 		97BB89D126337F23008ED481 /* SwiftStrings.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1D1C5AF2B10083A11B /* SwiftStrings.h */; };
-		C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */; };
+		C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C23F4F832900F42100EB1CF3 /* KSCrashInstallationAmazonS3.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F4F812900F42000EB1CF3 /* KSCrashInstallationAmazonS3.m */; };
 		C23F4F862900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F4F842900F44500EB1CF3 /* KSCrashReportSinkAmazonS3.m */; };
-		C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */; };
+		C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23F4F882900FEC100EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23F4F892900FEC700EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB02648017F7CEC5003E0AED /* KSCPU_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = CB02647E17F7CEC5003E0AED /* KSCPU_arm64.c */; };
 		CB02648217F8D853003E0AED /* KSCrashMonitor_CPPException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF53D4F17EB765C0056DA83 /* KSCrashMonitor_CPPException.cpp */; };
 		CB0264A917FA5B13003E0AED /* Container+DeepSearch_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02648317FA5B12003E0AED /* Container+DeepSearch_Tests.m */; };
@@ -1655,16 +1657,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */,
+				C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */,
 				03DE7C4C1C84DF8100F789BA /* KSCrashMonitor_System.h in Headers */,
 				03DE7CC71C84DFCD00F789BA /* KSCrashInstallation+Private.h in Headers */,
 				03DE7DAA1C879A0200F789BA /* KSCrashFramework.h in Headers */,
 				CB5657EF1E1D8A71005A8302 /* KSStackCursor_SelfThread.h in Headers */,
 				03DE7CBB1C84DFBC00F789BA /* NSData+KSGZip.h in Headers */,
-				C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */,
 				03DE7CD21C84DFD000F789BA /* KSCrash.h in Headers */,
 				03DE7C421C84DF8100F789BA /* KSCrashC.h in Headers */,
 				CB5633CD1DD5392A0023CEB6 /* KSCrashMonitorContext.h in Headers */,
-				C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */,
 				CB41F0651E0B9EBD00A1C9D7 /* KSStackCursor.h in Headers */,
 				CB41F06D1E0C4E9800A1C9D7 /* KSStackCursor_Backtrace.h in Headers */,
 				03DE7C491C84DF8100F789BA /* KSCrashMonitor_AppState.h in Headers */,
@@ -1874,6 +1876,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23F4F892900FEC700EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */,
+				C23F4F882900FEC100EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */,
 				EDF2BEC11CCF15AD004BADF4 /* KSCrashFramework.h in Headers */,
 				EDF2BEC21CCF15AD004BADF4 /* KSCrash.h in Headers */,
 				EDF2BEC41CCF15AD004BADF4 /* KSCrashC.h in Headers */,
