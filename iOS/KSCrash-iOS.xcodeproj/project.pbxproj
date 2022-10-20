@@ -320,6 +320,10 @@
 		97BB89CF26337F23008ED481 /* Malloc.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1A1C5AF2B10083A11B /* Malloc.h */; };
 		97BB89D026337F23008ED481 /* Punycode.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1C1C5AF2B10083A11B /* Punycode.h */; };
 		97BB89D126337F23008ED481 /* SwiftStrings.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F1D1C5AF2B10083A11B /* SwiftStrings.h */; };
+		C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */; };
+		C23F4F832900F42100EB1CF3 /* KSCrashInstallationAmazonS3.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F4F812900F42000EB1CF3 /* KSCrashInstallationAmazonS3.m */; };
+		C23F4F862900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F4F842900F44500EB1CF3 /* KSCrashReportSinkAmazonS3.m */; };
+		C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */; };
 		CB02648017F7CEC5003E0AED /* KSCPU_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = CB02647E17F7CEC5003E0AED /* KSCPU_arm64.c */; };
 		CB02648217F8D853003E0AED /* KSCrashMonitor_CPPException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF53D4F17EB765C0056DA83 /* KSCrashMonitor_CPPException.cpp */; };
 		CB0264A917FA5B13003E0AED /* Container+DeepSearch_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02648317FA5B12003E0AED /* Container+DeepSearch_Tests.m */; };
@@ -911,6 +915,10 @@
 		97BB896826337E2B008ED481 /* ReferenceStorage.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReferenceStorage.def; sourceTree = "<group>"; };
 		97BB896926337E2B008ED481 /* ManglingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManglingMacros.h; sourceTree = "<group>"; };
 		97BB896A26337E2B008ED481 /* SwiftDemangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftDemangle.h; sourceTree = "<group>"; };
+		C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashInstallationAmazonS3.h; path = ../../Source/KSCrash/Installations/KSCrashInstallationAmazonS3.h; sourceTree = "<group>"; };
+		C23F4F812900F42000EB1CF3 /* KSCrashInstallationAmazonS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCrashInstallationAmazonS3.m; path = ../../Source/KSCrash/Installations/KSCrashInstallationAmazonS3.m; sourceTree = "<group>"; };
+		C23F4F842900F44500EB1CF3 /* KSCrashReportSinkAmazonS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCrashReportSinkAmazonS3.m; path = ../../Source/KSCrash/Reporting/Sinks/KSCrashReportSinkAmazonS3.m; sourceTree = "<group>"; };
+		C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashReportSinkAmazonS3.h; path = ../../Source/KSCrash/Reporting/Sinks/KSCrashReportSinkAmazonS3.h; sourceTree = "<group>"; };
 		CB02647E17F7CEC5003E0AED /* KSCPU_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSCPU_arm64.c; path = ../../Source/KSCrash/Recording/Tools/KSCPU_arm64.c; sourceTree = "<group>"; };
 		CB02648317FA5B12003E0AED /* Container+DeepSearch_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Container+DeepSearch_Tests.m"; path = "../../Source/KSCrash-Tests/Container+DeepSearch_Tests.m"; sourceTree = "<group>"; };
 		CB02648417FA5B12003E0AED /* FileBasedTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileBasedTestCase.h; path = "../../Source/KSCrash-Tests/FileBasedTestCase.h"; sourceTree = "<group>"; };
@@ -1463,6 +1471,8 @@
 				CBF53D2D17EB765C0056DA83 /* KSCrashInstallationStandard.m */,
 				CBF53D2E17EB765C0056DA83 /* KSCrashInstallationVictory.h */,
 				CBF53D2F17EB765C0056DA83 /* KSCrashInstallationVictory.m */,
+				C23F4F802900F42000EB1CF3 /* KSCrashInstallationAmazonS3.h */,
+				C23F4F812900F42000EB1CF3 /* KSCrashInstallationAmazonS3.m */,
 			);
 			name = Installation;
 			sourceTree = "<group>";
@@ -1632,6 +1642,8 @@
 				CBF53D4817EB765C0056DA83 /* KSCrashReportSinkStandard.m */,
 				CBF53D4917EB765C0056DA83 /* KSCrashReportSinkVictory.h */,
 				CBF53D4A17EB765C0056DA83 /* KSCrashReportSinkVictory.m */,
+				C23F4F852900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h */,
+				C23F4F842900F44500EB1CF3 /* KSCrashReportSinkAmazonS3.m */,
 			);
 			name = Sinks;
 			sourceTree = "<group>";
@@ -1648,9 +1660,11 @@
 				03DE7DAA1C879A0200F789BA /* KSCrashFramework.h in Headers */,
 				CB5657EF1E1D8A71005A8302 /* KSStackCursor_SelfThread.h in Headers */,
 				03DE7CBB1C84DFBC00F789BA /* NSData+KSGZip.h in Headers */,
+				C23F4F872900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.h in Headers */,
 				03DE7CD21C84DFD000F789BA /* KSCrash.h in Headers */,
 				03DE7C421C84DF8100F789BA /* KSCrashC.h in Headers */,
 				CB5633CD1DD5392A0023CEB6 /* KSCrashMonitorContext.h in Headers */,
+				C23F4F822900F42100EB1CF3 /* KSCrashInstallationAmazonS3.h in Headers */,
 				CB41F0651E0B9EBD00A1C9D7 /* KSStackCursor.h in Headers */,
 				CB41F06D1E0C4E9800A1C9D7 /* KSStackCursor_Backtrace.h in Headers */,
 				03DE7C491C84DF8100F789BA /* KSCrashMonitor_AppState.h in Headers */,
@@ -2196,6 +2210,7 @@
 				03DE7CB51C84DFB700F789BA /* KSCrashReportFilterJSON.m in Sources */,
 				03DE7CC91C84DFCD00F789BA /* KSCrashInstallation.m in Sources */,
 				03DE7C8F1C84DFAB00F789BA /* KSSignalInfo.c in Sources */,
+				C23F4F832900F42100EB1CF3 /* KSCrashInstallationAmazonS3.m in Sources */,
 				03DE7C481C84DF8100F789BA /* KSCrashMonitor_AppState.c in Sources */,
 				03DE7CC61C84DFC100F789BA /* NSMutableData+AppendUTF8.m in Sources */,
 				03DE7C4A1C84DF8100F789BA /* KSCrashMonitorType.c in Sources */,
@@ -2209,6 +2224,7 @@
 				03DE7CB11C84DFB600F789BA /* KSCrashReportFilterBasic.m in Sources */,
 				03DE7CB71C84DFB700F789BA /* KSCrashReportFilterSets.m in Sources */,
 				CB48F6D31DCD0D490099D264 /* KSDemangle_Swift.cpp in Sources */,
+				C23F4F862900F44600EB1CF3 /* KSCrashReportSinkAmazonS3.m in Sources */,
 				CB41F06A1E0C4E9800A1C9D7 /* KSStackCursor_Backtrace.c in Sources */,
 				CB9821C11DFB359B00164220 /* KSMach.c in Sources */,
 				03DE7C601C84DF8600F789BA /* KSCrashMonitor_User.c in Sources */,
