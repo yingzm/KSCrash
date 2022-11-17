@@ -29,6 +29,8 @@
 #import "KSJSONCodecObjC.h"
 #import "KSReachabilityKSCrash.h"
 #import "NSError+SimpleConstructor.h"
+#import "KSCrashReportFilterAppleFmt.h"
+#import "KSCrashReportFilterBasic.h"
 
 //#define KSLogger_LocalLevel TRACE
 #import "KSLogger.h"
@@ -65,7 +67,10 @@
 
 - (id <KSCrashReportFilter>) defaultCrashReportFilterSet
 {
-    return self;
+	return [KSCrashReportFilterPipeline filterWithFilters:
+		[KSCrashReportFilterAppleFmt filterWithReportStyle:KSAppleReportStyleSymbolicated],
+		self,
+		nil];
 }
 
 - (void) filterReports:(NSArray*) reports
@@ -75,9 +80,22 @@
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:self.url
         cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
         timeoutInterval:15];
+    
+    NSMutableArray *jsonArray = [NSMutableArray array];
+    for (NSString *report in reports) {
+        NSData *data = [report dataUsingEncoding:NSUTF8StringEncoding];
+        NSData *compressed = [data gzippedWithCompressionLevel:-1 error:&error];
+        if (error!=nil)
+            continue;
+        [jsonArray addObject:[compressed base64EncodedStringWithOptions:0]];
+    }
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:jsonArray options:0 error:nil];
+    /*
     NSData* jsonData = [KSJSONCodec encode:reports
                                    options:KSJSONEncodeOptionSorted
                                      error:&error];
+    */
+    
     if(jsonData == nil)
     {
         kscrash_callCompletion(onCompletion, reports, NO, error);
